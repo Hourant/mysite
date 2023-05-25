@@ -1,0 +1,68 @@
+<RCC>
+  <qresource prefix="ui">
+    <file>Ui/help/1_03.png</file>
+    <file>Ui/help/1_06.png</file>
+    <file>Ui/help/1_08.png</file>
+    <file>Ui/help/1_11.png</file>
+    <file>Ui/help/bg_change.png</file>
+    <file>Ui/help/bg.png</file>
+    <file>Ui/help/bg.jpg</file>
+  </qresource>
+  <qresource prefix="filter">
+    <file>Ui/help/1_03.jpg</file>
+    <file>Ui/help/f1-1.png</file>
+    <file>Ui/help/f_replace.png</file>
+    <file>Ui/help/f2_bg.jpg</file>
+    <file>Ui/help/f_warn2.png</file>
+    <file>Ui/help/f3_bg.jpg</file>
+    <file>Ui/help/f1_bg.jpg</file>
+    <file>Ui/help/f1.png</file>
+    <file>Ui/help/f2-1.png</file>
+    <file>Ui/help/f3-1.png</file>
+    <file>Ui/help/f_warn.png</file>
+    <file>Ui/help/f2.png</file>
+    <file>Ui/help/f3.png</file>
+    <file>Ui/help/2_03.jpg</file>
+    <file>Ui/help/4_03.jpg</file>
+    <file>Ui/help/3_03.jpg</file>
+  </qresource>
+  <qresource prefix="replace">
+    <file>Ui/help/1.jpg</file>
+    <file>Ui/help/2.jpg</file>
+    <file>Ui/help/3.jpg</file>
+    <file>Ui/help/4.jpg</file>
+    <file>Ui/help/5.jpg</file>
+  </qresource>
+  <qresource prefix="fault">
+    <file>Ui/help/6.jpg</file>
+    <file>Ui/help/7.jpg</file>
+    <file>Ui/help/8.jpg</file>
+  </qresource>
+  <qresource prefix="999">
+    <file>Ui/help/dts.png</file>
+    <file>Ui/help/allow.png</file>
+    <file>Ui/help/ban.png</file>
+    <file>Ui/help/ban_press.png</file>
+    <file>Ui/help/allow_press.png</file>
+  </qresource>
+  <qresource prefix="btn">
+    <file>Ui/help/1.png</file>
+    <file>Ui/help/2.png</file>
+    <file>Ui/help/5-5.png</file>
+    <file>Ui/help/1-1.png</file>
+    <file>Ui/help/4-4.png</file>
+    <file>Ui/help/3-3.png</file>
+    <file>Ui/help/2-2.png</file>
+    <file>Ui/help/4.png</file>
+    <file>Ui/help/3.png</file>
+    <file>Ui/help/5.png</file>
+  </qresource>
+  <qresource prefix="wifi">
+    <file>Ui/help/connect.png</file>
+    <file>Ui/help/reset.png</file>
+    <file>Ui/help/set.png</file>
+  </qresource>
+  <qresource prefix="drain">
+    <file>Ui/help/bg_water.jpg</file>
+  </qresource>
+</RCC>

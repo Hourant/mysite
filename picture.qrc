@@ -1,0 +1,29 @@
+<RCC>
+  <qresource prefix="custom">
+    <file>Ui/custom/delet.png</file>
+    <file>Ui/custom/plus.png</file>
+    <file>Ui/custom/slash.png</file>
+    <file>Ui/custom/btn_bac.jpg</file>
+    <file>Ui/custom/btn_bac2.jpg</file>
+    <file>Ui/custom/btn_return.png</file>
+    <file>Ui/custom/symbol.png</file>
+    <file>Ui/custom/btn_ ok.png</file>
+    <file>Ui/custom/btn_press_ok.png</file>
+    <file>Ui/custom/btn_press_reset.png</file>
+    <file>Ui/custom/btn_reset.png</file>
+    <file>Ui/slider/handle_blue.png</file>
+    <file>Ui/background/bg_custom.jpg</file>
+    <file>Ui/slider/handle_red.png</file>
+  </qresource>
+  <qresource prefix="main">
+    <file>Ui/main/main_bar.png</file>
+    <file>Ui/main/btn_custom.jpg</file>
+    <file>Ui/main/btn_help.jpg</file>
+    <file>Ui/main/btn_water.jpg</file>
+    <file>Ui/main/main_wifi.png</file>
+    <file>Ui/main/main_water.png</file>
+    <file>Ui/main/main_warning2.png</file>
+    <file>Ui/main/main_warning1.png</file>
+    <file>Ui/background/bg_main.jpg</file>
+  </qresource>
+</RCC>

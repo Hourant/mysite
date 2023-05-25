@@ -1,0 +1,12 @@
+<RCC>
+  <qresource prefix="water">
+    <file>Ui/water/1.jpg</file>
+    <file>Ui/water/2.jpg</file>
+    <file>Ui/water/bg.jpg</file>
+    <file>Ui/water/单位_03.png</file>
+    <file>Ui/main/btn_custom.jpg</file>
+    <file>Ui/water/单位_07.png</file>
+    <file>Ui/main/btn_water.jpg</file>
+    <file>Ui/main/btn_help.jpg</file>
+  </qresource>
+</RCC>
