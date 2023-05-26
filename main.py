@@ -1,23 +1,21 @@
 import json
 import os
 from PyQt5 import QtWidgets, QtGui, QtCore
-from PyQt5.QtGui import QPalette,QPixmap, QFont, QImage
 from PyQt5.QtCore import Qt
 from PyQt5.QtCore import *
 from PyQt5.QtWidgets import *
-import threading
-import time
 import sys
-import wmi
-# 创建 WMI 连接
 import psutil
-from memory_profiler import profile
-import mouse_override
 from window_main import Ui_main
 from window_water import Ui_water
 from  window_help import Ui_help
 from window_custom import Ui_custom
-#from mouse_override import *
+
+# Function to read the config
+def read_config():
+    with open("config.json") as f:
+        contents = json.loads(f.read())
+    return contents
 
 class Window_main(QtWidgets.QWidget,Ui_main):
     # 在需要做性能分析的函数前面加装饰器 @profile
@@ -530,10 +528,11 @@ class Window_main(QtWidgets.QWidget,Ui_main):
 
     def onclick_ok(self):
 
-        f = open("config.json")
-        contents = f.read()
-        contents = json.loads(contents)
-        f.close()
+        # f = open("config.json")
+        # contents = f.read()
+        # contents = json.loads(contents)
+        # f.close()
+        contents = read_config()
         self.num = int(contents["config_num"])
 
 
@@ -821,10 +820,11 @@ class Window_main(QtWidgets.QWidget,Ui_main):
     def on_press_1(self):
 
 
-        f = open("config.json")
-        contents = f.read()
-        contents = json.loads(contents)
-        f.close()
+        # f = open("config.json")
+        # contents = f.read()
+        # contents = json.loads(contents)
+        # f.close()
+        contents = read_config()
         self.num = int(contents["config_num"])
         if self.num > 0:
             self.timer.start()
@@ -841,10 +841,11 @@ class Window_main(QtWidgets.QWidget,Ui_main):
             self.showMsg_temp()
             self.showMsg_amount()
         if self.num >= 1:
-            f = open("config.json")
-            contents = f.read()
-            contents = json.loads(contents)
-            f.close()
+            # f = open("config.json")
+            # contents = f.read()
+            # contents = json.loads(contents)
+            # f.close()
+            contents = read_config()
             self.ui_custom.slider_temp.setValue(int(contents["config1_temp"]))
             self.ui_custom.slider_amount.setValue(int(contents["config1_amount"]))
             self.showMsg_temp()
@@ -858,10 +859,11 @@ class Window_main(QtWidgets.QWidget,Ui_main):
 
 
     def on_press_2(self):
-        f = open("config.json")
-        contents = f.read()
-        contents = json.loads(contents)
-        f.close()
+        # f = open("config.json")
+        # contents = f.read()
+        # contents = json.loads(contents)
+        # f.close()
+        contents = read_config()
         self.num = int(contents["config_num"])
         if self.num > 1:
             self.timer.start()
@@ -878,10 +880,11 @@ class Window_main(QtWidgets.QWidget,Ui_main):
             self.showMsg_temp()
             self.showMsg_amount()
         if self.num >= 2:
-            f = open("config.json")
-            contents = f.read()
-            contents = json.loads(contents)
-            f.close()
+            # f = open("config.json")
+            # contents = f.read()
+            # contents = json.loads(contents)
+            # f.close()
+            contents = read_config()
             self.ui_custom.slider_temp.setValue(int(contents["config2_temp"]))
             self.ui_custom.slider_amount.setValue(int(contents["config2_amount"]))
             self.showMsg_temp()
@@ -896,10 +899,11 @@ class Window_main(QtWidgets.QWidget,Ui_main):
 
     def on_press_3(self):
 
-        f = open("config.json")
-        contents = f.read()
-        contents = json.loads(contents)
-        f.close()
+        # f = open("config.json")
+        # contents = f.read()
+        # contents = json.loads(contents)
+        # f.close()
+        contents = read_config()
         self.num = int(contents["config_num"])
         if self.num > 2:
             self.timer.start()
@@ -916,10 +920,11 @@ class Window_main(QtWidgets.QWidget,Ui_main):
             self.showMsg_temp()
             self.showMsg_amount()
         if self.num >= 3:
-            f = open("config.json")
-            contents = f.read()
-            contents = json.loads(contents)
-            f.close()
+            # f = open("config.json")
+            # contents = f.read()
+            # contents = json.loads(contents)
+            # f.close()
+            contents = read_config()
             self.ui_custom.slider_temp.setValue(int(contents["config3_temp"]))
             self.ui_custom.slider_amount.setValue(int(contents["config3_amount"]))
             self.showMsg_temp()
@@ -933,10 +938,11 @@ class Window_main(QtWidgets.QWidget,Ui_main):
 
 
     def on_press_4(self):
-        f = open("config.json")
-        contents = f.read()
-        contents = json.loads(contents)
-        f.close()
+        # f = open("config.json")
+        # contents = f.read()
+        # contents = json.loads(contents)
+        # f.close()
+        contents = read_config()
         self.num = int(contents["config_num"])
         if self.num >3:
          self.timer.start()
@@ -953,10 +959,11 @@ class Window_main(QtWidgets.QWidget,Ui_main):
             self.showMsg_temp()
             self.showMsg_amount()
         if self.num >= 4:
-            f = open("config.json")
-            contents = f.read()
-            contents = json.loads(contents)
-            f.close()
+            # f = open("config.json")
+            # contents = f.read()
+            # contents = json.loads(contents)
+            # f.close()
+            contents = read_config()
             self.ui_custom.slider_temp.setValue(int(contents["config4_temp"]))
             self.ui_custom.slider_amount.setValue(int(contents["config4_amount"]))
             self.showMsg_temp()
@@ -970,10 +977,11 @@ class Window_main(QtWidgets.QWidget,Ui_main):
 
 
     def on_press_5(self):
-        f = open("config.json")
-        contents = f.read()
-        contents = json.loads(contents)
-        f.close()
+        # f = open("config.json")
+        # contents = f.read()
+        # contents = json.loads(contents)
+        # f.close()
+        contents = read_config()
         self.num = int(contents["config_num"])
         if self.num > 4:
             self.timer.start()
@@ -990,10 +998,11 @@ class Window_main(QtWidgets.QWidget,Ui_main):
             self.showMsg_temp()
             self.showMsg_amount()
         if self.num >= 5:
-            f = open("config.json")
-            contents = f.read()
-            contents = json.loads(contents)
-            f.close()
+            # f = open("config.json")
+            # contents = f.read()
+            # contents = json.loads(contents)
+            # f.close()
+            contents = read_config()
             self.ui_custom.slider_temp.setValue(int(contents["config5_temp"]))
             self.ui_custom.slider_amount.setValue(int(contents["config5_amount"]))
             self.showMsg_temp()
@@ -1007,10 +1016,11 @@ class Window_main(QtWidgets.QWidget,Ui_main):
 
 
     def on_press_6(self):
-        f = open("config.json")
-        contents = f.read()
-        contents = json.loads(contents)
-        f.close()
+        # f = open("config.json")
+        # contents = f.read()
+        # contents = json.loads(contents)
+        # f.close()
+        contents = read_config()
         self.num = int(contents["config_num"])
 
 
@@ -1029,10 +1039,11 @@ class Window_main(QtWidgets.QWidget,Ui_main):
             self.showMsg_temp()
             self.showMsg_amount()
         if self.num == 6:
-            f = open("config.json")
-            contents = f.read()
-            contents = json.loads(contents)
-            f.close()
+            # f = open("config.json")
+            # contents = f.read()
+            # contents = json.loads(contents)
+            # f.close()
+            contents = read_config()
             self.ui_custom.slider_temp.setValue(int(contents["config6_temp"]))
             self.ui_custom.slider_amount.setValue(int(contents["config6_amount"]))
             self.showMsg_temp()
@@ -1058,10 +1069,11 @@ class Window_main(QtWidgets.QWidget,Ui_main):
         self.ui_custom.btn_del_yes.lower()
         self.ui_custom.btn_del_no.lower()
 
-        f = open("config.json")
-        contents = f.read()
-        contents = json.loads(contents)
-        f.close()
+        # f = open("config.json")
+        # contents = f.read()
+        # contents = json.loads(contents)
+        # f.close()
+        contents = read_config()
         self.num = int(contents["config_num"])
 
 
@@ -1093,10 +1105,11 @@ class Window_main(QtWidgets.QWidget,Ui_main):
         with open("config.json", 'w') as f_new:
             json.dump(content, f_new, indent=2)
 
-        f = open("config.json")
-        contents = f.read()
-        contents = json.loads(contents)
-        f.close()
+        # f = open("config.json")
+        # contents = f.read()
+        # contents = json.loads(contents)
+        # f.close()
+        contents = read_config()
         if self.ui_custom.label_num.text() == "1":
             self.ui_custom.slider_temp.setValue(int(contents["config1_temp"]))
             self.ui_custom.slider_amount.setValue(int(contents["config1_amount"]))

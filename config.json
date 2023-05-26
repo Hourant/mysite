@@ -1,15 +1,15 @@
 {
   "config1_temp": "80",
   "config1_amount": "450",
-  "config2_temp": "64",
-  "config2_amount": "152",
-  "config3_temp": "45",
-  "config3_amount": "50",
+  "config2_temp": "80",
+  "config2_amount": "450",
+  "config3_temp": "68",
+  "config3_amount": "295",
   "config4_temp": "80",
   "config4_amount": "450",
   "config5_temp": "80",
   "config5_amount": "450",
   "config6_temp": "80",
   "config6_amount": "450",
-  "config_num": 0
+  "config_num": 4
 }
